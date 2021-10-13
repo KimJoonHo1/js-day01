@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .wrap {
+            width: 500px;
+            height: 500px;
+            margin: 0 auto;
+            background-color: pink;
+        }
+        .btn-box {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+<script type="text/javascript">
+    var sw=1;
+    function swUp() {
+        if((sw+1 >= 9) == false) {
+            sw = sw+1;
+            document.getElementById('img').src = "resources/images/test" + sw + ".jpg";
+        } else {
+            alert("다음사진이 없습니다");
+        }
+    }
+    function swDown() {
+        if((sw-1 <= 0) == false) {
+            sw = sw-1;
+            document.getElementById('img').src = "resources/images/test" + sw + ".jpg";
+        } else {
+            alert("이전사진이 없습니다");
+        }
+    }
+</script>
+    <div class="wrap">
+        <img id="img" src="resources/images/test1.jpg" width="500px" height="400px">
+        <div class="btn-box">
+            <button type="button" onclick="swDown();">이전사진</button>
+            <button type="button" onclick="swUp();">다음사진</button>
+        </div>
+    </div>
+</body>
+</html>

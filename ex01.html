@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script type="text/javascript">
+    var num = 1234;
+    document.write("num 출력 : " + num + "<hr/>");
+    document.write('<span style="color: red;">num 출력</span> : ' + num + '<hr/>');
+
+    // typeof : 데이터의 타입을 알려줌
+    var obj = null;
+    document.write(typeof 100.11 + "<br>");
+    document.write(typeof num + "<br/>");
+    document.write(typeof obj + "<br/>");
+    document.write(typeof [1, 2, 3] + "<br/>");
+    document.write(typeof "test" + "<br/>");
+
+    var comGrade = prompt("당신의 나이는 ?");
+    document.write(comGrade);
+</script>
+<script src="test.js"></script>
+    <button type="button" onclick="test();">버어튼</button>
+</body>
+</html>
